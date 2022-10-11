@@ -8,7 +8,7 @@ Tento projekt slouží k extrahování výsledků z parlamentních voleb v roce 
 
 ### Instalace knihoven
 
-Knihovny, které jsou použity v kódu jsou uloženy v souboru requirements.txt. Pro instalaci doporučuji použít nové virtuální prostředí a s nainstalovaným manažerem použít následovně:
+Knihovny, které jsou použity v kódu jsou uloženy v souboru `requirements.txt`. Pro instalaci doporučuji použít nové virtuální prostředí a s nainstalovaným manažerem použít následovně:
 
 <pre>$ pip3 --version                                       # overim verzi manažeru</pre>
 
@@ -20,7 +20,7 @@ Spuštění souboru election_scraper.py v rámci příkazového řádku požaduj
 
 <pre>python3 Election_scraper.py 'odkaz-uzemniho-celku' 'vysledny-soubor'</pre>
 
-Následně se vám stáhnou výsledky jako soubor s příponou .csv .
+Následně se vám stáhnou výsledky jako soubor s příponou `.csv` .
 
 ### Ukázka projektu
 
@@ -38,7 +38,7 @@ STAHUJI DATA Z VYBRANEHO URL: https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkra
 
 UKLADAM DO SOUBORU: vysledky_prostejov.csv
 
-UKONCUJI election_scraper
+UKONCUJI Election_scraper
 
 #### Částečný výstup:
 code,location,registered,envelopes,valid,Občanská demokratická strana,Řád národa - Vlastenecká unie,CESTA ODPOVĚDNÉ SPOLEČNOSTI,......\
