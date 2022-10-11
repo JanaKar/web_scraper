@@ -1,4 +1,4 @@
-# Engeto_PA_3rd_project_JK
+# Engeto_PA_3rd_project
 
 Třetí projekt na Python Akademii od Engeta
 
