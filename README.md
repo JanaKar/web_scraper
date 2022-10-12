@@ -30,7 +30,7 @@ Výsledky hlasování pro okres Prostějov:
 
 #### Spuštění programu:
 
-<pre>python3 Election_scraper.py 'https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=12&xnumnuts=7103' 'vysledky-prostejov.csv'</pre>
+<pre>python3 Election_scraper.py 'https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=12&xnumnuts=7103' 'vysledky_prostejov.csv'</pre>
 
 #### Průběh stahování:
 
