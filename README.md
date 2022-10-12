@@ -4,7 +4,8 @@ Třetí projekt na Python Akademii od Engeta
 
 ### Popis projektu
 
-Tento projekt slouží k extrahování výsledků z parlamentních voleb v roce 2017. Odkaz k prohlédnutí najdete [zde](https://volby.cz/pls/ps2017nss/ps3?xjazyk=CZ).
+Tento projekt slouží k extrahování výsledků z parlamentních voleb v roce 2017. Odkaz k prohlédnutí najdete [zde](https://volby.cz/pls/ps2017nss/ps3?xjazyk=CZ). Script vyscrapuje volební výsledky pro všechny obce patřící pod územní celek (úroveň, např. Prostějov) (Pro získání odkazu použijte link X ve sloupci výběr obce.)
+
 
 ### Instalace knihoven
 
