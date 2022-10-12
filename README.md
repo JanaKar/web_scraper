@@ -18,7 +18,7 @@ Knihovny, které jsou použity v kódu jsou uloženy v souboru `requirements.txt
 
 Spuštění souboru election_scraper.py v rámci příkazového řádku požaduje dva povinné argumenty.
 
-<pre>python3 Election_scraper.py 'odkaz-uzemniho-celku' 'vysledny-soubor'</pre>
+<pre>python3 Election_scraper.py 'odkaz_uzemniho_celku' 'vysledny_soubor'</pre>
 
 Následně se vám stáhnou výsledky jako soubor s příponou `.csv` .
 
