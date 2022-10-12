@@ -13,6 +13,7 @@ from bs4 import BeautifulSoup as BS
 
 attr = re.compile(r"t[1,2]sa1 t[1,2]sb2")
 attr2 = re.compile(r"t[1,2]sa2 t[1,2]sb3")
+parties_names_without_coma = list()
 
 
 def open_url(weblink: str) -> requests.models.Response:
@@ -48,10 +49,8 @@ def cycle_replace_direct(object3: list, ch1: str, ch2: str) -> list:
     return object3
 
 
-def main() -> None:
-
+def main_block() -> None:
     data_all = list()
-    parties_names_changed_char2 = list()
 
     if len(sys.argv) != 3:
         print(f"Chybny pocet zadanych argumentu ({len(sys.argv)})")
@@ -83,7 +82,7 @@ def main() -> None:
         if run == 0:
             parties_names = soup_unit.find_all(headers=attr, class_="overflow_name")
             parties_names_changed_char = cycle_replace_character(parties_names, ch1="\xa0", ch2=" ")
-            parties_names_changed_char2 = cycle_replace_direct(parties_names_changed_char, ch1=",", ch2=" ")
+            parties_names_without_coma = cycle_replace_direct(parties_names_changed_char, ch1=",", ch2=" ")
         run = +1
 
         # collects and cleans (through for loop) list of votes for parties for 1 city
@@ -102,7 +101,7 @@ def main() -> None:
         data_all.append(data_list)
 
     header = ['code', 'location', 'registered', 'envelopes', 'valid'] + \
-             parties_names_changed_char2
+             parties_names_without_coma
 
     # control print
     #    print(header)
@@ -119,10 +118,16 @@ def main() -> None:
     return
 
 
-try:
-    main()
-except:
-    print("Z duvodu chybneho zadani argumentu ukoncuji program")
-    quit()
-print(f"UKONCUJI Election_scraper")
-print("--------------------------")
+def start() -> None:
+    try:
+        main_block()
+    except:
+        print("Z duvodu chybneho zadani argumentu ukoncuji program")
+        quit()
+    print(f"UKONCUJI Election_scraper")
+    print("--------------------------")
+    return
+
+
+if __name__ == "__main__":
+    start()
