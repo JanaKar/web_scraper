@@ -85,7 +85,7 @@ def main_block() -> None:
             parties_names_without_coma = cycle_replace_direct(parties_names_changed_char, ch1=",", ch2=" ")
         run = +1
 
-        # collects and cleans (through for loop) list of votes for parties for 1 city
+        # collects and cleans list of votes for parties for 1 city
         parties = soup_unit.find_all(headers=attr2, class_="cislo")
         party = cycle_replace_character(parties, ch1="\xa0", ch2="")
 
